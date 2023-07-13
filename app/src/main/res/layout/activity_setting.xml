@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorprimary"
+
+    tools:context=".SettingActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="vertical"
+
+
+        >
+
+        <ImageView
+            android:id="@+id/IV_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+
+            android:src="@drawable/ic_baseline_arrow_back_24"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white">
+
+        </ImageView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/useravatar"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
+
+
+            />
+
+        <ImageView
+            android:id="@+id/add_profile"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="-20dp"
+            android:background="@color/fb_color"
+            android:src="@drawable/add"
+
+            app:tint="@color/white"
+
+            >
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:gravity="center_vertical"
+                android:text="User Name :"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+
+                >
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:hint="Enter Your Name"
+                android:textColorHint="@color/white">
+
+            </EditText>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:gravity="center_vertical"
+                android:text="About :"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+
+                >
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_about"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="5dp"
+                android:hint="About"
+
+                android:textColorHint="@color/white">
+
+            </EditText>
+
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/bg_btn_save"
+            android:text="Save"
+            android:textColorHint="@color/colorprimary">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:background="@drawable/bg_linear"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="100dp"
+            android:drawableLeft="@drawable/ic_privacy"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+
+            android:text="Privacy"
+
+            android:textColor="@color/colorprimary"
+            android:textSize="20dp"
+
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="100dp"
+            android:drawableLeft="@drawable/ic_bell"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+
+            android:text="Notification"
+
+            android:textColor="@color/colorprimary"
+            android:textSize="20dp"
+
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="100dp"
+            android:drawableLeft="@drawable/ic_info"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+
+            android:text="Privacy"
+
+            android:textColor="@color/colorprimary"
+            android:textSize="20dp"
+
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="100dp"
+            android:drawableLeft="@drawable/ic_addfriends"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+
+            android:text="Invite a Friend"
+
+            android:textColor="@color/colorprimary"
+            android:textSize="20dp"
+
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="100dp"
+            android:drawableLeft="@drawable/ic_help"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+
+            android:text="Help"
+
+            android:textColor="@color/colorprimary"
+            android:textSize="20dp"
+
+            android:textStyle="bold">
+
+        </TextView>
+    </LinearLayout>
+</RelativeLayout>
